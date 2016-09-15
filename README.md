@@ -8,7 +8,7 @@ Node.js app for controlling Philips Hue lights with Google Hangouts.
 
 ## Usage
 
-Edit (config_sample.js)[config_sample.js] and rename it to *config.js*.
+Edit [config_sample.js](config_sample.js) and rename it to *config.js*.
 
 ```javascript
 node app.js
