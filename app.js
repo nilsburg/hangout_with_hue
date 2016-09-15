@@ -2,6 +2,7 @@ var config = require("./config");
 var hangoutsBot = require("hangouts-bot");
 var http = require("http");
 var request = require("request");
+var hue = require("node-hue-api");
 var bot = new hangoutsBot(config.hangout.user, config.hangout.password);
 var hueIp = config.hue.ip;
 var hueUserAuthCode = config.hue.authCode;
@@ -25,8 +26,20 @@ var Hue = function(){
 	}
 
 }
-var hue = new Hue();
-console.log(hueApiUrl);
+var displayBridges = function(bridge) {
+    console.log("Hue Bridges Found: " + JSON.stringify(bridge));
+};
+
+// --------------------------
+// Using a promise
+hue.nupnpSearch().then(displayBridges).done();
+
+// --------------------------
+// Using a callback
+hue.nupnpSearch(function(err, result) {
+    if (err) throw err;
+    displayBridges(result);
+});
 bot.on('online', function() {
     console.log('online');
 });

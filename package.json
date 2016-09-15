@@ -1,0 +1,29 @@
+{
+  "name": "hangout_with_hue",
+  "version": "0.0.1",
+  "description": "Node app to control hue with hangouts",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nilsburg/hangout_with_hue.git"
+  },
+  "dependencies": {
+    "hangouts-bot": "~0.2.1",
+    "node-hue-api": "~2.2.0",
+    "request": "~2.74"    
+  },
+  "keywords": [
+    "hue",
+    "hangouts",
+    "node"
+  ],
+  "author": "nilsburg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nilsburg/hangout_with_hue/issues"
+  },
+  "homepage": "https://github.com/nilsburg/hangout_with_hue#readme"
+}
