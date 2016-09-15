@@ -2,9 +2,17 @@
 
 Node.js app for controlling Philips Hue lights with Google Hangouts.
 
-## Documentarion
+## Documentation
 - [Oficial Hue API](http://www.developers.meethue.com/documentation/core-concepts)
 - [Unoficial Hue API](http://www.burgestrand.se/hue-api/)
+
+## Usage
+
+Edit (config_sample.js)[config_sample.js] and rename it to *config.js*.
+
+```javascript
+node app.js
+```
 
 ## TODO
 - Bridge discovery
